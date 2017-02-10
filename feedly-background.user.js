@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Feedly - Open entry in background
 // @description    Adds 'h' as a hotkey to open selected entry in background tab 
-// @namespace      userscripts.org/users/Lyk
+// @namespace      github.com/moben
 // @author         Lyk
 // @include        http://feedly.com/*
 // @include        https://feedly.com/*
