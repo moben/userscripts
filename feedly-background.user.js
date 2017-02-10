@@ -8,7 +8,7 @@
 // @include        http://*.feedly.com/*
 // @include        https://*.feedly.com/*
 // @grant          GM_openInTab
-// @version        1.0.2
+// @version        1.0.3
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
 // ==/UserScript==
 
