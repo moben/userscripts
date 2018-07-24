@@ -8,7 +8,7 @@
 // @include        http://*.feedly.com/*
 // @include        https://*.feedly.com/*
 // @grant          GM_openInTab
-// @version        1.0.7
+// @version        1.0.8
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
 // ==/UserScript==
 
@@ -89,12 +89,11 @@ jQuery.noConflict();
 			}
 		};
 
-		var cur = jQuery('.selected');
-		n=cur.find('a.title').attr('href');
-		r=cur.find('a.title').text();
+		var cur = jQuery('.visitWebsiteButton');
+		n=cur.attr('href');
+		r=cur.text();
 		console.log("pocket:", n, r);
 		var t=document;
-//		n=t.location.href,r=t.title;
 		var i=e(n);
 		var s=t.createElement('script');
 		s.type='text/javascript';
