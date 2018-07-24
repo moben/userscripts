@@ -23,7 +23,7 @@ jQuery.noConflict();
 		** you can change this to any key you want (until I include a script command for that :)
 		** pick the corresponding number from here: http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
 		*/
-	/*  
+	/*
 	 May add this infuture version
 
 	var orig_button = jQuery('#floatingPageActionCustomize'); //#pageActionLayouts
@@ -51,7 +51,6 @@ jQuery.noConflict();
 		}
 	};
 
-	
 	var to_pocket = function() {
 		var e=function(t,n,r,i,s){
 			var o=[3499810,5941965,4255831,5592705,2483424,3234826,5681012,6288810,5342013,4867033];
@@ -89,7 +88,7 @@ jQuery.noConflict();
 				return e(u+'',n,r,i,s+1)
 			}
 		};
-		
+
 		var cur = jQuery('.selected');
 		n=cur.find('a.title').attr('href');
 		r=cur.find('a.title').text();
@@ -114,7 +113,7 @@ jQuery.noConflict();
 			// if in textfield, do nothing
 			if (el && (el.tagName.toLowerCase() == 'input' && el.type == 'text' ||
 					el.tagName.toLowerCase() == 'textarea')) {
-				return true;  
+				return true;
 			}
 			return !open_entry(); // To supress default behavior of the event
 			// Added for those who have "search as I type" features enabled, etc
@@ -126,7 +125,7 @@ jQuery.noConflict();
 			// if in textfield, do nothing
 			if (el && (el.tagName.toLowerCase() == 'input' && el.type == 'text' ||
 					el.tagName.toLowerCase() == 'textarea')) {
-				return true;  
+				return true;
 			}
 			return !to_pocket(); // To supress default behavior of the event
 			// Added for those who have "search as I type" features enabled, etc
