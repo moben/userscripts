@@ -8,7 +8,7 @@
 // @include        http://*.feedly.com/*
 // @include        https://*.feedly.com/*
 // @grant          GM_openInTab
-// @version        1.0.6
+// @version        1.0.7
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
 // ==/UserScript==
 
@@ -41,10 +41,10 @@ jQuery.noConflict();
 
 
 	var open_entry = function() {
-		var cur = jQuery('.selected');
+		var cur = jQuery('.visitWebsiteButton');
 		if (cur.length) {
     		console.log("FeedlyOpenEntryInBackgroundTab: GM_openInTab now");
-			GM_openInTab(cur.find('a.title').attr('href'), true);		
+			GM_openInTab(cur.attr('href'), true);
 			return true;
 		} else {
 			return false;
